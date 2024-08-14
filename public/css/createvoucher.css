@@ -1,0 +1,279 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+header{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+
+    background-color: #ff7835;
+    color: #fff;
+}
+
+header .user-profile{
+    margin: 10px 20px 10px 20px;
+    font-size: 23px;
+    display: flex;
+}
+
+header .user-profile i{
+    font-size: 35px;
+}
+
+header .user-profile .name-email{
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+header .user-profile .name-email .name{
+    margin-top: -2px;
+}
+
+header .user-profile .name-email .gmail{
+    margin-top: -21px;
+}
+
+header .judul{
+    margin: 12px 40px;
+    font-size: 25px;
+}
+
+header .history-button .fa-house{
+    margin-top: -50px;
+}
+
+header .history-button button{
+    margin: 12px 28px;
+    border: 1px solid #fff;
+    background-color: #ff7835;
+    color: #fff;
+    padding: 5px 20px;
+    border-radius: 10px;
+    /* font-weight: 550; */
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+header .history-button button:hover{
+    background-color: #fff;
+    color: #ff7835;
+    transition: all 0.3s ease-in-out;
+}
+
+/* ============================================================================= */
+
+.sidebar-main{
+    /* background-color: black; */
+    background-color: #eeeeee;
+    /* padding: 21% 85px; */
+    /* margin-top: 10px; */
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: space-between; */
+    /* gap: 40px; */
+}
+
+/* ============================================================================= */
+
+.sidebar{
+    position: fixed;
+    top: 60px;
+    right: 0px;
+    background-color: #272734;
+    color: #fff;
+    padding: 10px 20px 20px 20px;
+    width: 15%;
+    height: 661px;
+}
+
+.sidebar h3{
+    padding-top: 10px;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.sidebar ul{
+    margin-top: 10px;
+}
+
+.sidebar ul a{
+    text-decoration: none;
+}
+
+.sidebar ul li{
+    margin: 10px 0 10px -30px;
+    padding: 10px 10px 0px 10px;
+    /* background-color: #deebee; */
+    list-style: none;
+    color: #fff;
+}
+
+.sidebar ul li:hover{
+    background-color: #ff7835;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.sidebar ul li i{
+    font-size: 20px; 
+    position: absolute;
+    z-index: 1;
+}
+
+.sidebar ul li span{
+    padding-left: 40px;
+}
+
+.sidebar .separator{
+    width: 100%;
+    height: 0.5px;
+    background-color: black;
+}
+
+.sidebar .category-quantity{
+    display: flex;
+    justify-content: space-between;
+}
+
+.sidebar .category-quantity span:last-child {
+    background-color: #ff7835;
+    padding: 10px 10px 10px 10px;
+    border-radius: 10px;
+    margin-top: -10px;
+}
+
+.sidebar .logout{
+    padding: 10px;
+}
+/* ============================================================================= */
+
+.main{
+    margin: 0 10%;
+    background-color:#eeeeee;
+    color: #27274f;
+    padding: 20px 20px 20px 5px;
+    width: 85%;
+    height: 100%; 
+    box-sizing: border-box;
+    min-height: 661px;
+
+    /* display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center;  */
+}
+
+.main h1{
+    padding-left: 20px;
+}
+
+.main .table-box{
+    width: 70%;
+    margin: 25px 20px 20px 190px;
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.main .separator{
+    margin: 15px 0 10px 20px;
+    width: 97%;
+    height: 1px;
+    background-color: black;
+}
+
+/* ============================================================================= */
+
+.table-box .back{
+    margin-left: 20px;
+    margin-top: 5px;
+    padding: 3px 10px;
+    border-radius: 5px;
+    border: 1px solid #888;
+    background-color: #b5b5b5;
+}
+
+.table-box .back:hover{
+    background-color: #888;
+}
+
+.table-box #nama,
+.table-box #kategori,
+.table-box #status{
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 15px;
+    background-color: white;
+    height: 42px;
+    width: 97%;
+    border-radius: 5px;
+    padding: 10px 15px;
+    border: 1px solid #888;
+    font-size: 17px;
+    box-shadow: inset 1px 1px 0px rgba(0, 0, 0, 0.5);
+
+    border: 1px solid #ccc; /* Warna border default */
+    transition: border-color 0.3s; /* Transisi halus untuk perubahan border */
+}
+
+.table-box #nama:focus,
+.table-box #kategori:focus,
+.table-box #status:focus {
+    border-color: #ff7835; /* Warna biru untuk border saat fokus */
+    box-shadow: 0 0 4px 1px #fb8a51; /* Menambahkan shadow biru */
+}
+
+.table-box #foto{
+    margin-top: 15px;
+}
+
+.table-box #outputfoto{
+    margin-left: 20px;
+    margin-top: 15px;
+}
+
+.table-box label{
+    margin-left: 20px;
+}
+
+.table-box .simpan{
+    margin-left: 20px;
+    margin-top: 15px;
+    height: 42px;
+    width: 97%;
+    border-radius: 5px;
+    padding: 10px 15px;
+    border: 1px solid #888;
+    font-size: 17px;
+    background-color: #0d6efd;
+    color: #fff;
+}
+
+.table-box .simpan:hover{
+    background-color: #0a58ca;
+}
+
+input[type="text"] {
+    border: 1px solid #ccc; /* Warna border default */
+    padding: 8px;
+    border-radius: 4px;
+    outline: none; /* Menghilangkan outline default */
+    transition: border-color 0.3s; /* Transisi halus untuk perubahan border */
+}
+
+/* Gaya ketika input mendapatkan fokus */
